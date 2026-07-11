@@ -1,0 +1,86 @@
+---
+layout: default
+title: null
+---
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Full ice, at last</div>
+    <h1>Gear that fits<br>the game girls<br>and women play.</h1>
+    <p class="lede">
+      Honest reviews, sizing guides, and buying advice for women's and girls'
+      hockey — written by a former ACHA captain who coached her team to its
+      first league championship. No generic "unisex" gear reviews. No guessing
+      on fit.
+    </p>
+    <div class="stat-line">
+      <div class="stat">
+        <div class="num">5+ yrs</div>
+        <div class="label">Playing &amp; coaching</div>
+      </div>
+      <div class="stat">
+        <div class="num">1</div>
+        <div class="label">League championship coached</div>
+      </div>
+      <div class="stat">
+        <div class="num">100%</div>
+        <div class="label">Gear tested, not guessed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gear-guides">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">On the shelf</div>
+        <h2>Gear Guides</h2>
+      </div>
+    </div>
+    <div class="post-grid">
+      {% assign gear_posts = site.posts | where: "category", "Gear Guide" %}
+      {% for post in gear_posts %}
+      <div class="post-card">
+        <div class="tag">{{ post.category }}</div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        <div class="meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+      </div>
+      {% else %}
+      <div class="post-card">
+        <div class="tag">Coming soon</div>
+        <h3>The first gear guide is on the way</h3>
+        <p>Check back shortly — new posts publish regularly.</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="behind-the-bench" style="background:var(--ice-deep);">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Coaching notes</div>
+        <h2>Behind the Bench</h2>
+      </div>
+    </div>
+    <div class="post-grid">
+      {% assign bench_posts = site.posts | where: "category", "Behind the Bench" %}
+      {% for post in bench_posts %}
+      <div class="post-card">
+        <div class="tag">{{ post.category }}</div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        <div class="meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+      </div>
+      {% else %}
+      <div class="post-card">
+        <div class="tag">Coming soon</div>
+        <h3>Coaching stories are on the way</h3>
+        <p>Notes from the bench, publishing soon.</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

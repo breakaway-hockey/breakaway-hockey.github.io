@@ -1,0 +1,37 @@
+title: Breakaway
+tagline: Gear & guides for women's and girls' hockey
+description: >-
+  Honest gear guides, buying advice, and coaching notes for women's and
+  girls' hockey players — from a former ACHA captain and championship head coach.
+url: "" # fill in once you have a custom domain, e.g. https://www.yourdomain.com
+baseurl: "" # leave blank for a user/org site (yourname.github.io); set to "/repo-name" for a project site
+
+# No author name set intentionally — keep this site anonymous.
+# author: (leave unset)
+
+# Affiliate disclosure shown site-wide in the footer (FTC requirement)
+disclosure_short: "Breakaway contains affiliate links. If you buy through them, we may earn a small commission at no extra cost to you."
+
+markdown: kramdown
+permalink: /:title/
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
