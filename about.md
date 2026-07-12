@@ -6,18 +6,16 @@ permalink: /about/
 <div class="article-head">
 <div class="wrap">
 <div class="kicker">About Breakaway</div>
-<h1>I've played this game everywhere it's least convenient to play it.</h1>
+<h1>To the my fellow girl ice hockey players,</h1>
 </div>
 </div>
 <div class="page-body">
 <div class="wrap">
 <div class="prose" markdown="1">
 
-Hockey gave me the best days of my life. I grew up playing in a hockey desert, dedicating the majority of my time to traveling for and playing higher competition. That commitment to the sport led me to playing at the collegiate level and later on coaching at the collegiate level. Breakaway exists because I broke away from my hometown lifestyle and in return hockey gave me the best days of my life. As a retired, washed up player and coach, I want to provide the ultimate hockey resource that I wish I had - specifically for the lady hockey players out there.
+I grew up playing in a hockey desert, dedicating the majority of my time to traveling for and playing higher competition. That commitment to the sport led me to playing at the collegiate level and later on coaching at the collegiate level. Breakaway exists because I broke away from my hometown lifestyle and in return hockey gave me the best days of my life. As a retired, washed up player and coach, I want to provide the ultimate hockey resource that I wish I had - specifically for the lady hockey players out there.
 
 ## What you'll find here
-
-**~For the girls~**
 
 **Gear Guides** — sizing, fit, and honest opinions for skates, sticks, protective gear, and bags, plus what to actually wear under it, to and from the rink
 
