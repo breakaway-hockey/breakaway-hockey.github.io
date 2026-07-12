@@ -1,0 +1,395 @@
+/* ============================================================
+   BREAKAWAY — design tokens
+   Palette pulled from the rink itself: ice, blue lines, the
+   single red stripe down center ice, and skate-steel grey.
+   ============================================================ */
+
+:root {
+  --ice: #eef3f6;
+  --ice-deep: #dde9ee;
+  --rink-blue: #163a5c;
+  --rink-blue-deep: #0f2740;
+  --blue-line: #2c6e9e;
+  --goal-red: #c8332c;
+  --ink: #141d24;
+  --steel: #55636f;
+  --steel-light: #8695a1;
+  --white: #ffffff;
+
+  --font-display: "Teko", "Arial Narrow", sans-serif;
+  --font-body: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+
+  --max-width: 1080px;
+  --radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--ice);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--blue-line);
+  text-decoration: underline;
+  text-decoration-color: rgba(44, 110, 158, 0.35);
+  text-underline-offset: 2px;
+}
+a:hover { text-decoration-color: var(--blue-line); }
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--goal-red);
+  outline-offset: 2px;
+}
+
+img { max-width: 100%; display: block; }
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------------- Signature element: the rink line ----------------
+   A thick blue band with a thin red center stripe — the same visual
+   grammar as a hockey rink's blue line / center line, reused as the
+   site's section divider throughout. */
+.rink-line {
+  height: 10px;
+  background: var(--blue-line);
+  position: relative;
+}
+.rink-line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--goal-red);
+  transform: translateY(-50%);
+}
+.rink-line.thin { height: 6px; }
+
+/* ---------------- Header / scoreboard nav ---------------- */
+.site-header {
+  background: var(--rink-blue);
+  color: var(--white);
+}
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.brand {
+  font-family: var(--font-display);
+  font-size: 34px;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  text-decoration: none;
+  line-height: 1;
+}
+.brand:hover { text-decoration: none; opacity: 0.9; }
+.brand small {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--steel-light);
+  margin-top: 4px;
+}
+.roster-nav {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.roster-nav a {
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0.85;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+}
+.roster-nav a:hover { opacity: 1; border-bottom-color: var(--goal-red); }
+
+/* ---------------- Hero ---------------- */
+.hero {
+  background: linear-gradient(180deg, var(--rink-blue) 0%, var(--rink-blue-deep) 100%);
+  color: var(--white);
+  padding: 72px 0 56px;
+}
+.hero .eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--goal-red);
+  margin-bottom: 18px;
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(42px, 7vw, 78px);
+  line-height: 0.98;
+  margin: 0 0 22px;
+  max-width: 16ch;
+  letter-spacing: 0.005em;
+}
+.hero p.lede {
+  font-size: 19px;
+  max-width: 56ch;
+  color: #cdd8e0;
+  margin: 0 0 30px;
+}
+.stat-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+.stat-line .stat .num {
+  font-family: var(--font-display);
+  font-size: 40px;
+  color: var(--white);
+  line-height: 1;
+}
+.stat-line .stat .label {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--steel-light);
+  margin-top: 6px;
+}
+
+/* ---------------- Content sections ---------------- */
+main { background: var(--ice); }
+.section {
+  padding: 56px 0;
+}
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.section-head h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--rink-blue);
+  margin: 0;
+  letter-spacing: 0.005em;
+}
+.section-head .kicker {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--steel);
+}
+
+/* Post card grid */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+.post-card {
+  background: var(--white);
+  border: 1px solid var(--ice-deep);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.post-card .tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--goal-red);
+}
+.post-card h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 26px;
+  margin: 0;
+  line-height: 1.05;
+}
+.post-card h3 a { color: var(--ink); text-decoration: none; }
+.post-card h3 a:hover { color: var(--blue-line); }
+.post-card p { color: var(--steel); margin: 0; font-size: 15.5px; }
+.post-card .meta {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--steel-light);
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+/* ---------------- Article ---------------- */
+.article-head { padding: 48px 0 32px; background: var(--white); border-bottom: 1px solid var(--ice-deep); }
+.article-head .kicker {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--goal-red);
+  margin-bottom: 14px;
+}
+.article-head h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(34px, 5vw, 52px);
+  color: var(--rink-blue);
+  line-height: 1.02;
+  margin: 0 0 16px;
+}
+.article-head .meta {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--steel);
+}
+
+.article-body {
+  background: var(--white);
+  padding-bottom: 60px;
+}
+.article-body .prose {
+  max-width: 720px;
+  padding-top: 36px;
+}
+.prose h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--rink-blue);
+  margin: 40px 0 14px;
+}
+.prose h3 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--ink);
+  margin: 28px 0 8px;
+}
+.prose p { margin: 0 0 16px; color: var(--ink); }
+.prose ul, .prose ol { margin: 0 0 16px; padding-left: 22px; }
+.prose li { margin-bottom: 8px; }
+.prose strong { color: var(--rink-blue); }
+
+.gear-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 32px;
+  font-size: 15px;
+}
+.gear-table th, .gear-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--ice-deep);
+}
+.gear-table th {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--steel);
+  border-bottom: 2px solid var(--rink-blue);
+}
+.gear-table td.price { font-family: var(--font-mono); color: var(--steel); white-space: nowrap; }
+
+.callout {
+  background: var(--ice);
+  border-left: 4px solid var(--blue-line);
+  padding: 16px 20px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 24px 0;
+  font-size: 15.5px;
+}
+.callout.coach { border-left-color: var(--goal-red); }
+.callout .label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--goal-red);
+  display: block;
+  margin-bottom: 6px;
+}
+.callout.coach .label { color: var(--blue-line); }
+
+.disclosure-box {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--steel);
+  background: var(--ice);
+  border: 1px dashed var(--steel-light);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin: 28px 0;
+}
+.disclosure-box a { color: var(--rink-blue); }
+
+/* ---------------- Footer ---------------- */
+.site-footer {
+  background: var(--rink-blue-deep);
+  color: #b9c6cf;
+  padding: 40px 0 32px;
+  font-size: 14px;
+}
+.site-footer .wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.site-footer a { color: #d7e2e9; }
+.site-footer .foot-disclosure {
+  max-width: 60ch;
+  font-size: 13px;
+  color: #8ea0ab;
+  margin-top: 10px;
+}
+
+/* ---------------- Utility / static pages ---------------- */
+.page-body {
+  background: var(--white);
+  padding: 48px 0 64px;
+}
+.page-body .prose { max-width: 720px; padding-top: 0; }
+
+@media (max-width: 640px) {
+  .roster-nav { gap: 16px; font-size: 11px; }
+  .hero { padding: 52px 0 40px; }
+  .section { padding: 40px 0; }
+}
