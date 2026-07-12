@@ -4,29 +4,31 @@ title: About
 permalink: /about/
 ---
 <div class="article-head">
-  <div class="wrap">
-    <div class="kicker">About Breakaway</div>
-    <h1>Written by someone who's actually laced up.</h1>
-  </div>
+<div class="wrap">
+<div class="kicker">About Breakaway</div>
+<h1>I've played this game everywhere it's least convenient to play it.</h1>
+</div>
 </div>
 <div class="page-body">
-  <div class="wrap">
-    <div class="prose" markdown="1">
+<div class="wrap">
+<div class="prose" markdown="1">
 
-<p>Breakaway exists because most hockey gear content is written for men, then relabeled "unisex" — and if you've ever tried to size a women's skate off a men's fit chart, you know that doesn't work.</p>
+Hockey gave me the best days of my life. I grew up playing in a hockey desert, dedicating the majority of my time to traveling for and playing higher competition. That commitment to the sport led me to playing at the collegiate level and later on coaching at the collegiate level. Breakaway exists because I broke away from my hometown lifestyle and in return hockey gave me the best days of my life. As a retired, washed up player and coach, I want to provide the ultimate hockey resource that I wish I had - specifically for the lady hockey players out there.
 
-<p>I played, captained, and served as VP of my college team, then head coached the women's team to its first league championship and its first national tournament appearance. I've fitted skates for beginners, argued with equipment reps about junior sizing, and packed more tournament bags than I can count.</p>
+## What you'll find here
 
-<p>This site is where that experience turns into gear guides you can actually trust — plus the coaching notes and "why this sport matters" pieces that don't fit neatly into a buying guide.</p>
+**~For the girls~**
 
-<h2>What you'll find here</h2>
-<ul>
-<li><strong>Gear Guides</strong> — sizing, fit, and honest comparisons for skates, sticks, protective gear, and bags, specific to women's and girls' bodies and playing style.</li>
-<li><strong>Behind the Bench</strong> — coaching lessons, stories, and the bigger picture on where women's and girls' hockey is headed.</li>
-</ul>
+**Gear Guides** — sizing, fit, and honest opinions for skates, sticks, protective gear, and bags, plus what to actually wear under it, to and from the rink
 
-<p>Some links on this site are affiliate links — read the full <a href="{{ '/affiliate-disclosure/' | relative_url }}">disclosure here</a>. Every recommendation reflects what I'd actually tell a player on my own bench.</p>
+**Gift Guides** — birthdays, Christmas, whatever the holiday, these guides will give you the best suggestions on gifts for your hockey lover - player or coach 
 
-    </div>
-  </div>
+**Behind the Bench** — the playing and coaching stories, the lessons that only show up after you've been on both sides of the bench.
+
+**Growing the Game** — a wider look at where access to women's and girls' hockey actually stands today, and where it's headed.
+
+Some links on this site are affiliate links — read the full [disclosure here]({{ '/affiliate-disclosure/' | relative_url }}). Every recommendation reflects what I'd actually tell a player on my own bench.
+
+</div>
+</div>
 </div>
