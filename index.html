@@ -8,8 +8,8 @@ title: null
     <h1>Hockey, on and<br>off the ice, for<br>girls and women.</h1>
     <p class="lede">
       Welcome to Breakaway — your one stop shop for all things ice hockey
-      for women and girls. Everything from gear guides and what to wear
-      to and from the rink to real stories from the bench and the ice.
+      for women and girls. Everything from gear and guift guides
+      to real stories from the bench and the ice.
       And an honest look at where women's and girls' hockey is actually
       headed, from someone who's played and coached at every level of it.
     </p>
@@ -44,7 +44,35 @@ title: null
   </div>
 </section>
 
-<section class="section" id="behind-the-bench" style="background:var(--ice-deep);">
+<section class="section" id="gift-guides" style="background:var(--ice-deep);">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Shopping for a hockey player</div>
+        <h2>Gift Guides</h2>
+      </div>
+    </div>
+    <div class="post-grid">
+      {% assign gift_posts = site.posts | where: "category", "Gift Guide" %}
+      {% for post in gift_posts %}
+      <div class="post-card">
+        <div class="tag">{{ post.category }}</div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        <div class="meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+      </div>
+      {% else %}
+      <div class="post-card">
+        <div class="tag">Coming soon</div>
+        <h3>The first gift guide is on the way</h3>
+        <p>Birthdays, holidays, and everything in between — publishing soon.</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="behind-the-bench">
   <div class="wrap">
     <div class="section-head">
       <div>
@@ -72,7 +100,7 @@ title: null
   </div>
 </section>
 
-<section class="section" id="growing-the-game">
+<section class="section" id="growing-the-game" style="background:var(--ice-deep);">
   <div class="wrap">
     <div class="section-head">
       <div>
