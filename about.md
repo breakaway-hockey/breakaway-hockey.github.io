@@ -13,7 +13,7 @@ permalink: /about/
 <div class="wrap">
 <div class="prose" markdown="1">
 
-I grew up playing in a hockey desert, dedicating the majority of my time to traveling for and playing higher competition. That commitment to the sport led me to playing at the collegiate level and later on coaching at the collegiate level. Breakaway exists because I broke away from my hometown lifestyle and in return hockey gave me the best days of my life. As a retired, washed up player and coach, I want to provide the ultimate hockey resource that I wish I had - specifically for the lady hockey players out there.
+I grew up playing in a hockey desert, as a girl, dedicating the majority of my time to traveling for and playing higher competition. My commitment to the sport led me to playing at the collegiate level and later on coaching at the collegiate level. Breakaway exists because I broke away from my hometown lifestyle and in return hockey gave me the best days of my life. As a retired, washed up player and coach, I want to provide the ultimate hockey resource that I wish I had - specifically for the lady hockey players out there.
 
 ## What you'll find here
 
