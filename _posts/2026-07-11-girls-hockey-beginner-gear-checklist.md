@@ -4,6 +4,7 @@ category: "Gear Guide"
 affiliate: true
 read_time: 8
 excerpt: "Every piece of equipment a first-time girls' hockey player needs, what it actually costs, and where it's worth spending more versus where it's fine to go cheap."
+published: false
 ---
 
 If your daughter just made a team, or just decided she wants to try, the equipment list can feel like it was written to overwhelm you on purpose. It wasn't — hockey genuinely needs more gear than almost any other youth sport. But you don't need to buy it all at once, and you definitely don't need the most expensive version of everything.
