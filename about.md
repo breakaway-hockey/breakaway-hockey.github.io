@@ -6,7 +6,7 @@ permalink: /about/
 <div class="article-head">
 <div class="wrap">
 <div class="kicker">About Breakaway</div>
-<h1>To the my fellow girl ice hockey players,</h1>
+<h1>Created by someone who's actually laced up.</h1>
 </div>
 </div>
 <div class="page-body">
